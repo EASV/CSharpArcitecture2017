@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerAppDAL\CustomerAppDAL.csproj" />
+    <ProjectReference Include="..\CustomerAppEntity\CustomerAppEntity.csproj" />
+  </ItemGroup>
+
+</Project>
