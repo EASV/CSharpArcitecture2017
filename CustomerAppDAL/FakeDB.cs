@@ -8,8 +8,8 @@ namespace CustomerAppDAL
     public class FakeDB
     {
         #region FakeDB
-        static int id = 1;
-        static List<Customer> customers = new List<Customer>();
+        public static int Id = 1;
+        public static List<Customer> Customers = new List<Customer>();
         #endregion
     }
 }
