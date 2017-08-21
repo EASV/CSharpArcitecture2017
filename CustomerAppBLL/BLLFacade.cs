@@ -1,4 +1,5 @@
 ﻿using CustomerAppBLL.Services;
+using CustomerAppDAL;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace CustomerAppBLL
     {
         public ICustomerService CustomerService
         {
-            get { return new CustomerService(); }
+            get { return new CustomerService(new DALFacade().CustomerRepository); }
         }
     }
 }
