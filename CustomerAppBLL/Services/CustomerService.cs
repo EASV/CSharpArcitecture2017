@@ -11,32 +11,22 @@ namespace CustomerAppBLL.Services
     {
         public Customer Create(Customer cust)
         {
-            Customer newCust;
-            FakeDB.Customers.Add(newCust = new Customer()
-            {
-                Id = FakeDB.Id++,
-                FirstName = cust.FirstName,
-                LastName = cust.LastName,
-                Address = cust.Address
-            });
-            return newCust;
+            return null;
         }
 
         public Customer Delete(int Id)
         {
-            var cust = Get(Id);
-            FakeDB.Customers.Remove(cust);
-            return cust;
+            return null;
         }
 
         public Customer Get(int Id)
         {
-            return FakeDB.Customers.FirstOrDefault(x => x.Id == Id);
+            return null;
         }
 
         public List<Customer> GetAll()
         {
-            return new List<Customer>(FakeDB.Customers);
+            return null;
         }
 
         public Customer Update(Customer cust)
@@ -49,6 +39,7 @@ namespace CustomerAppBLL.Services
             customerFromDb.FirstName = cust.FirstName;
             customerFromDb.LastName = cust.LastName;
             customerFromDb.Address = cust.Address;
+            //Save Changes
             return customerFromDb;
         }
     }
