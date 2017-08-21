@@ -1,7 +1,6 @@
 ﻿using CustomerAppBLL;
 using CustomerAppEntity;
 using System;
-using System.Collections.Generic;
 
 namespace CustomerAppUI
 {
@@ -107,16 +106,16 @@ namespace CustomerAppUI
 
         private static void DeleteCustomer()
         {
-
             var customerFound = FindCustomerById();
             if(customerFound != null)
             {
                 bllFacade.CustomerService.Delete(customerFound.Id);
             }
-            else
-            {
-                Console.WriteLine("Customer not Found");
-            }
+
+            var response = 
+                customerFound == null ?
+                "Customer not Found" : "Customer was Deleted";
+            Console.WriteLine(response);
         }
 
         private static void AddCustomers()
