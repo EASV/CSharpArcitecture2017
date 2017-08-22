@@ -8,7 +8,12 @@ namespace CustomerAppDAL
     public class DALFacade
     {
         public ICustomerRepository CustomerRepository {
-            get { return new CustomerRepositoryFakeDB(); }
+            //get { return new CustomerRepositoryFakeDB(); }
+            get
+            {
+                return new CustomerRepositoryEFMemory(
+                    new Context.InMemoryContext());
+            }
         }
     }
 }
