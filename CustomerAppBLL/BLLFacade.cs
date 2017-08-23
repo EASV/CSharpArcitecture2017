@@ -10,7 +10,7 @@ namespace CustomerAppBLL
     {
         public ICustomerService CustomerService
         {
-            get { return new CustomerService(new DALFacade().CustomerRepository); }
+            get { return new CustomerService(new DALFacade()); }
         }
     }
 }

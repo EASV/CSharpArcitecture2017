@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CustomerAppDAL.UOW;
 
 namespace CustomerAppDAL
 {
@@ -15,5 +16,14 @@ namespace CustomerAppDAL
                     new Context.InMemoryContext());
             }
         }
+
+        public IUnitOfWork UnitOfWork
+		{
+			get
+			{
+				return new UnitOfWorkMem();
+			}
+		}
+
     }
 }

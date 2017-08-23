@@ -80,12 +80,12 @@ namespace CustomerAppUI
                 customer.LastName = Console.ReadLine();
                 Console.WriteLine("Address: ");
                 customer.Address = Console.ReadLine();
-            }
+				bllFacade.CustomerService.Update(customer);
+			}
             else
             {
                 Console.WriteLine("Customer not Found!");
             }
-            
 
         }
 

@@ -12,4 +12,7 @@
     <ProjectReference Include="..\CustomerAppEntity\CustomerAppEntity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UOW\" />
+  </ItemGroup>
 </Project>

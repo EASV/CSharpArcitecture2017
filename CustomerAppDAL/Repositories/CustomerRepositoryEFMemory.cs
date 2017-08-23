@@ -19,8 +19,6 @@ namespace CustomerAppDAL.Repositories
         public Customer Create(Customer cust)
         {
             _context.Customers.Add(cust);
-            //Move to UOW later!!! 
-            _context.SaveChanges();
             return cust;
         }
 
@@ -28,7 +26,6 @@ namespace CustomerAppDAL.Repositories
         {
             var cust = Get(Id);
             _context.Customers.Remove(cust);
-            _context.SaveChanges();
             return cust;
         }
 
