@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerAppDAL\CustomerAppDAL.csproj" />
-    <ProjectReference Include="..\CustomerAppEntity\CustomerAppEntity.csproj" />
   </ItemGroup>
 
 </Project>

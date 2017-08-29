@@ -1,7 +1,5 @@
-﻿using CustomerAppEntity;
-using System;
+﻿using CustomerAppDAL.Entities;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CustomerAppDAL
 {
