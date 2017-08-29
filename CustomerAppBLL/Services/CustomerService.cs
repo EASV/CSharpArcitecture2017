@@ -74,6 +74,6 @@ namespace CustomerAppBLL.Services
             }
 
         }
-        
+
     }
 }

@@ -1,13 +1,11 @@
 ﻿using CustomerAppBLL.BusinessObjects;
 using CustomerAppDAL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CustomerAppBLL.Converters
 {
     class CustomerConverter
     {
+
         internal Customer Convert(CustomerBO cust)
         {
             return new Customer()
@@ -29,6 +27,5 @@ namespace CustomerAppBLL.Converters
                 LastName = cust.LastName
             };
         }
-        
     }
 }
